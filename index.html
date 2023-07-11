@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header style="position:sticky; top:0;z-index:999">
+        <nav class="navbar navbar-expand-md navbar-light py-2    ">
+            <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse " id="navbar-toggler">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/icono.png" width="50" alt="Logo de la página web">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-bold " href="#home" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-primary fw-bold " href=" #about-me">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-primary fw-bold " href=" #projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-primary fw-bold " href="">CV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+<!--  Hero -->
+<section id="home"  class="hero">
+    <div class="principal-hero d-flex flex-column justify-content-center  align-items-center">
+        <img class="hero-image " src="images/Jhonatan.jpg" alt="Foto de Jhonatan">
+        <h1>Hola, soy Jhonatan</h1>
+        <h2>Desarrollador Backend .NET</h2>
+    </div>
+    <div class="inferior-hero">
+        <img class=" img-fluid"  src="images/Dot-Bot.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+    </div>
+</section>
+
+<!-- About -->
+<section id="about-me" class="about-me black-section ">
+    <div class="contenedor">
+        <h2 class="title-section">Conoce a Jhonatan</h2>
+        <p class="text-section">Desarrollador Backend, autodidacta y apasionado por la tecnología. Estoy realizando
+            un cambio de carrera, por lo que busco mi primer empleo como desarrollador .NET
+            Soy una persona comprometida, responsable y cooperativa, que ha trabajado en el sector
+            de las obras eléctricas como cadista y elaborador de costos y presupuestos.</p>
+    </div>
+</section>
+
+<!--Experiencia-->
+<section class="pt-5 pb-5 " style="margin-top: -110px; z-index:999; ">
+    <div class="row  justify-content-center  text-center    ">
+        <div class="my-card-1 col col-3  bg-white   ">
+            <i class="bi bi-hdd-fill text-primary size-icon"></i>
+            <h3 class="text-primary">Backend</h3>
+            <h4 class="text-primary">Stack</h4>
+            <p style="margin-bottom: 0;">C#, ASP.NET Core, SQL Server</p>
+            <p>Docker, Digital Ocean</p>
+            <h4 class="text-primary">Experiencia</h4>
+            <ul>
+                <li>Web app MVC</li>
+                <li>Web API</li>
+                <li>Entity Framework Core</li>
+                <li>Testing</li>
+                <li>Deploy</li>
+            </ul>
+        </div>
+        <div class="my-card-2 col col-3 bg-white">
+            <i class="bi bi-code-slash text-primary size-icon"></i>
+            <h3 class="text-primary">Frontend</h3>
+            <h4 class="text-primary">Stack</h4>
+            <p  >HTML, CSS </p>
+            <br>
+            <h4 class="text-primary">Experiencia</h4>
+            <ul>
+                <li>Maquetación</li>
+                <li>Blazor</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- @*Projects*@
+
+@model IEnumerable<Project> -->
+<section id="projects" class="pt-5 pb-5">
+    <div class="text-center ">
+        <h2 class="pt-5">Mis proyectos recientes</h2>
+        <p>Estos son algunos proyectos que he creado recientemente....</p>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">            
+                <div class="col card-projects" >
+                    <div class="card h-100">
+                        <img src="/images/disney.jpg" class="card-img-top my-imamge" alt="imagen proyecto" />
+                        <div ve me the c class="card-body">
+                            <h5 class="card-title">Disney API</h5>
+                            <p class="card-text">
+                                Requerimientos                 
+                            </p>
+                            <li>                                   
+                                <ul><i class="bi bi-check-all check text-primary"></i>Modelado de base de datos </i></ul> 
+                                <ul><i class="bi bi-check-all check text-primary"></i>CRUD</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Filtrado y Busqueda</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Identity</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Authenticación de Usuarios - JWT</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Envió de emails</ul>
+                                
+                            </li>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="https://disney-api.app.csharpjourney.com/index.html" target="_blank"
+                               rel="noopener noreferrer">Visitar</a>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="col card-projects">
+                    <div class="card h-100">
+                        <img src="/images/e-commerce.jpg" class="card-img-top" alt="imagen proyecto" />
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce API</h5>
+                            <p class="card-text">
+                                Requerimientos</p>
+                            <li>                                   
+                                <ul><i class="bi bi-check-all check text-primary"></i>Modelado de base de datos </i></ul> 
+                                <ul><i class="bi bi-check-all check text-primary"></i>Implementación de patrones generic        </i></ul> 
+                                <ul style="margin-left: 25px;">repository, specification, unit of work</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>CRUD</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Filtrado, Busqueda, Paginado</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Identity</ul>
+                                <ul><i class="bi bi-check-all check text-primary"></i>Authenticación de Usuarios - JWT</ul>
+                                
+                            </li>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="https://e-commerce-api.app.csharpjourney.com/index.html" target="_blank"
+                               rel="noopener noreferrer">Visitar</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col card-projects">
+                    <div class="card h-100">
+                        <img src="/images/tesis.jpg" class="card-img-top" alt="imagen proyecto" />
+                        <div class="card-body">
+                            <h5 class="card-title">Predicción de la demanda de energía eléctrica con Redes Neuronales</h5>
+                            <p class="card-text">
+                                Proyecto de tesis con el cual obtuve el grado de Ing. Mecánico Eléctrico, dicho proyecto consiste en predecir los valores de una serie temporal, el cual representa la demanda de energía eléctrica en la ciudad de Juliaca                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="https://github.com/Jhonatan1599/prediccion" target="_blank"
+                               rel="noopener noreferrer">Visitar</a>
+                        </div>
+                    </div>
+                </div> 
+
+ 
+        </div>      
+        <!-- sola una Card -->
+        <div style="margin-top: 20px; ">
+            <div class=" card-projects d-flex justify-content-center " >
+                <div class="card h-100" style="max-width: 350px;">
+                    <img src="/images/libros.jpg" class="card-img-top" alt="imagen proyecto" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mercado Libro</h5>
+                        <p class="card-text">
+                            Actualmente me encuentro realizando este proyecto grupal en <a href="https://www.nocountry.tech/" target="_blank"
+                            rel="noopener noreferrer" >NoCountry</a>
+                        </p>                        
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="https://mercadolibro-api.app.csharpjourney.com/index.html" target="_blank"
+                           rel="noopener noreferrer">Visitar</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+
+        
+    </div>
+    
+    <a href="https://github.com/Jhonatan1599" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+            Ver todos mis proyectos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+    </a>
+</section>
+
+<!-- @*FOOTER*@ -->
+<footer class="black-section d-flex flex-column align-items-center justify-content-center pb-5">
+    <img class="footer-logo" src="images/icono-blanco.svg" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">     
+        <a href="https://github.com/Jhonatan1599" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jhonatanlarico/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+        </a>     
+        <a href="mailto:larico1599@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+        </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Jhonatan Larico C.</div>
+</footer>
+
+    
+</body>
+</html>
